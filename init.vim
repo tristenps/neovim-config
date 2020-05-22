@@ -1,0 +1,69 @@
+syntax enable
+
+set guicursor=
+set hidden
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set smartindent
+set nu rnu
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set termguicolors
+set noshowmode
+set cursorline
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+call plug#begin("~/.vim/plugged")
+    Plug 'morhetz/gruvbox'
+	Plug 'vim-airline/vim-airline'
+	Plug 'mbbill/undotree'
+	Plug 'tpope/vim-fugitive'
+	Plug 'ap/vim-css-color'
+	"Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	Plug 'ThePrimeagen/vim-be-good'
+call plug#end()
+
+" Plugin Configs
+colorscheme gruvbox 
+set background=dark
+"Use deoplete.
+let g:deoplete#enable_at_startup=1
+" Sets Leader Key to Space
+let mapleader = " "
+
+let g:netrw_browse_split = 2
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
+
+" Remapped Window Hopping 
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+nnoremap <leader>u :UndotreeShow<CR>
+
+" File Explorer Shortcut
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar>  :vertical resize 30<CR>
+
+" Remap Up and down for Popoups
+" May want to remove when getting used to tmux
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>""
+
+" Jump to Definition - coc
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gr <Plug>(coc-references)
+
+" Get into files quickly with FZF
+nnoremap <C-p> :GFiles<CR>
