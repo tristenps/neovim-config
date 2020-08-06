@@ -1,0 +1,60 @@
+Adobe Acrobat DC
+Adobe Creative Cloud
+Adobe Illustrator 2020
+Adobe Photoshop 2020
+Alacritty.app
+Alfred 4.app
+Amphetamine.app
+AppCleaner.app
+Atom.app
+Autodesk
+Battle.net.app
+Boom 3D.app
+Boop.app
+Clockify Desktop.app
+Clone Hero.app
+Docker.app
+Dozer.app
+Encrypto.app
+ExpanDrive.app
+Firefox.app
+Fork.app
+GarageBand.app
+GitKraken.app
+Google Chrome.app
+GrandPerspective.app
+HandBrake.app
+Hearthstone
+Itsycal.app
+Katalon Studio.app
+Keynote.app
+Logi Options.app
+Malwarebytes.app
+Microsoft Excel.app
+Microsoft PowerPoint.app
+Microsoft Word.app
+Notion.app
+Numbers.app
+Pages.app
+Parcel.app
+Postgres.app
+Postman.app
+Python 3.8
+Robo 3T.app
+Safari.app
+SideNotes.app
+Skype.app
+Spark.app
+Spectacle.app
+Spotify.app
+Tempo.app
+The Unarchiver.app
+Time Out.app
+Time Out.localized
+Utilities
+VNC Viewer.app
+balenaEtcher.app
+calibre.app
+iMovie.app
+iTerm.app
+pgAdmin 4.app
