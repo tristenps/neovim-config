@@ -1,6 +1,6 @@
 syntax enable
 
-set guicursor=
+set guicursor=i:ver25-iCursor
 set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
@@ -56,7 +56,7 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 
 " File Explorer Shortcut
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar>  :vertical resize 30<CR>
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar>  :vertical resize 20<CR>
 
 " Remap Up and down for Popoups
 " May want to remove when getting used to tmux
